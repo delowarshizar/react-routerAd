@@ -1,18 +1,25 @@
-import React from 'react'
+import React from "react";
 
-import './App.css'
+import "./App.css";
 
 function App() {
-
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.name.value);
+    console.log(e.target.email.value);
+  };
   return (
     <>
-      
-      <h1>Delowar Husain</h1>
-      <p>Welcome to my React application!</p>
-      <div>this is main page</div>
-     
+      <h1>React Form</h1>
+      <form onSubmit={handelSubmit}>
+        <input type="text" name="name" placeholder="Your name" />
+        <br />
+        <input type="email" name="email" placeholder="Your email" />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
