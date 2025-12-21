@@ -8,6 +8,8 @@ function App() {
     <>
       
       <h1>Delowar Husain</h1>
+      <p>Welcome to my React application!</p>
+      <div>this is main page</div>
      
     </>
   )
